@@ -1,0 +1,17 @@
+{
+    "SFTP": [
+        "servidor sftp",
+        2222,
+        "user sftp",
+        "password user sftp",
+        "",
+        ""
+    ],
+    "CORREO" : [
+        "noreply@dominio.com",
+        "smtp.serviciodecorreo.es",
+        465,
+        "noreply@dominio.com",
+        "pass user email"
+    ]
+}

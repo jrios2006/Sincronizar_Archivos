@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Diferencias archivos</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 5px; text-align: left; }
+    th { background-color: #eee; }
+    .extra_local { background-color: #ffd; }
+    .falta_local { background-color: #fdd; }
+  </style>
+</head>
+<body>
+  <h1>Diferencias entre cliente y servidor</h1>
+  <p>Servidor: {{ servidor_nombre }} (Ruta local: {{ ruta_local_servidor }})</p>
+  <p>Fecha de comparación: {{ fecha_comparacion }}</p>
+
+  {% if diferencias|length == 0 %}
+    <p>No hay diferencias.</p>
+  {% else %}
+    <table>
+      <tr>
+        <th>Tipo</th>
+        <th>Nombre</th>
+        <th>Ruta</th>
+        <th>Hash MD5</th>
+      </tr>
+      {% for diff in diferencias %}
+        {% if diff.tipo == 'extra_local' %}
+        <tr class="extra_local">
+          <td>{{ diff.tipo }}</td>
+          <td>{{ diff.local.nombre }}</td>
+          <td>{{ diff.local.ruta }}</td>
+          <td>{{ diff.local.hash_md5 }}</td>
+        </tr>
+        {% elif diff.tipo == 'falta_local' %}
+        <tr class="falta_local">
+          <td>{{ diff.tipo }}</td>
+          <td>{{ diff.servidor.nombre }}</td>
+          <td>{{ diff.servidor.ruta }}</td>
+          <td>{{ diff.servidor.hash_md5 }}</td>
+        </tr>
+        {% endif %}
+      {% endfor %}
+    </table>
+  {% endif %}
+</body>
+</html>

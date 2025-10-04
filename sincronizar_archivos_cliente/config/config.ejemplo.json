@@ -1,0 +1,19 @@
+{
+  "carpeta_local": "Ruta local a colocar",
+  "fichero_json_origen": "inventario_imagenes.json",
+  "ruta_html_salida": "diferencias_inventario_imagenes.html",
+  "accion_salida": "TODOS",  
+  "documentacion_accion_salida" : "SFTP, EMAIL, TODOS",
+  "ruta_remota_fichero": "Ruta remota donde está el fichero origina",
+  "ruta_remota_salida": "Ruta remota donde depositar el informe generado",
+  "servidor_nombre" : "Nombre del Cliente",
+  "email": {
+    "para": "operador@dominio.com",
+    "asunto": "Diferencias con el repositorio central de imágenes con el cliente"
+  },
+    "log": {
+    "ruta_log": "logs/cliente.log",
+    "max_megas": 5,
+    "copias": 3
+  }
+}
