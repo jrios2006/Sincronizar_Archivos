@@ -1,0 +1,8 @@
+{
+  "directorio_base": "/tmp/Images",
+  "tabla": "imagenes",
+  "fichero_a_exportar" : "inventario_imagenes.json",
+  "rutas_remotas_a_exportar" : [
+    "/ruta1"
+  ]
+}

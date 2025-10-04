@@ -1,0 +1,17 @@
+{
+  "BBDD": {
+    "user": "user_bbdd",
+    "password": "pass_user",
+    "host": "HOST_MARIADB",
+    "port": 3307,
+    "database": "database"
+  },
+  "SFTP" : [
+    "HOST_SFTP",
+    2222,
+    "user_SFTP",
+    "pass_user",
+    "",
+    ""    
+  ]
+}

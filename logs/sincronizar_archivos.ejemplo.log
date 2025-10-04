@@ -1,0 +1,9 @@
+2025-10-04 11:24:26 [INFO] root: === Inicio de sincronización de archivos ===
+2025-10-04 11:24:26 [INFO] modules.sync: Escaneados 374 ficheros en el directorio /tmp/Images
+2025-10-04 11:24:38 [INFO] modules.sync: Sincronización completada con 374 archivos
+2025-10-04 11:24:38 [INFO] modules.export: ✅ Fichero JSON exportado: inventario_imagenes_shp.json
+2025-10-04 11:24:38 [INFO] modules.export: 📤 Subiendo inventario_imagenes_shp.json a /ruta1...
+2025-10-04 11:24:38 [INFO] modules.export: ✅ Subida completada en /ruta1
+2025-10-04 11:24:47 [INFO] root: ✅ Sincronización y exportación completadas correctamente.
+2025-10-04 11:24:47 [INFO] root: === Fin del proceso ===
+
